@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Food Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff7043;
+            color: white;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .food-card p {
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Favorite Foods</h1>
+
+<div class="gallery">
+    <div class="food-card">
+        <img src="pizza.jpg" alt="Pizza">
+        <p>Pizza</p>
+    </div>
+
+    <div class="food-card">
+        <img src="burger.jpg" alt="Burger">
+        <p>Burger</p>
+    </div>
+
+    <div class="food-card">
+        <img src="momo.jpg" alt="Momo">
+        <p>Momo</p>
+    </div>
+
+    <div class="food-card">
+        <img src="chowmein.jpg" alt="Chow Mein">
+        <p>Chow Mein</p>
+    </div>
+
+    <div class="food-card">
+        <img src="icecream.jpg" alt="Ice Cream">
+        <p>Ice Cream</p>
+    </div>
+
+    <div class="food-card">
+        <img src="cake.jpg" alt="Cake">
+        <p>Cake</p>
+    </div>
+</div>
+
+</body>
+</html>
